@@ -1,0 +1,152 @@
+/* Reset styles */
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  .heading {
+        text-align: center;
+        padding: 10px;
+  }
+  
+  .table-container {
+   padding: 10px;
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px;
+    
+  }
+  
+  .data-table {
+   
+    border-collapse: separate;
+    background-color: #fff;
+  
+
+  }
+  .fixed {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+   background-color:  #f5f5f5;
+   text-align: center;
+    
+  }
+  .checkbox{
+    margin-left: 0px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    
+    padding: 4px 25px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+  }
+
+  .data-table th {
+    white-space: nowrap;
+  }
+  
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Button styles */
+  .buttons-container {
+    display: none;
+    position: absolute;
+    background-color: rgb(63, 19, 19);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    cursor: pointer;
+    left: -90px; /* Adjust this value as needed */
+    top: 50%; /* Position it vertically centered */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.hover-container:hover .buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+.hover-container {
+  position: relative;
+  height: 100%;
+}
+
+.button-add-vendor,
+.button-add-products,
+.button-edit-products {
+    margin-bottom: 5px;
+}
+
+
+.data-table td button {
+    background-color: #08490b; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .data-table tbody tr td button:hover {
+    background-color: #045d09; /* Darker Green on hover */
+  }
+  
+  .data-table tbody tr td button:focus {
+    outline: none;
+  }
+  
+  
+  .data-table button:hover {
+    background-color: #2d7731; /* Darker Green */
+  }
+  
+  .data-table button:focus {
+    outline: none;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .data-table button {
+      font-size: 12px;
+    }
+  }
+  
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .data-table {
+      font-size: 12px;
+    }
+  }
+  
